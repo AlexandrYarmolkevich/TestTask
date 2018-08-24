@@ -1,0 +1,43 @@
+[
+  {
+      "type":"Bond",
+      "mode": "RGB",
+      "size": "A0"
+      
+  },
+  {
+      "type": "Gloss",
+      "mode": "Multichannel",
+      "size": "A1"
+  },
+  {
+      "type": "Matt",
+      "mode": "Indexed",
+      "size": "A2"
+  },
+  {
+    "type": "Recycled",
+    "mode": "Duotone",
+    "size": "A3"
+  },
+  {
+    "type": "Silk",
+    "mode": "Bitmap",
+    "size": "A4"
+  },
+  {
+    "type": "Uncoated",
+    "mode": "Grayscale",
+    "size": "A5"
+  },
+  {
+    "type": "Watermarked",
+    "mode": "CMYK",
+    "size": "A6"
+  },
+  {
+    "type": "",
+    "mode": "Lab",
+    "size": "A7"
+  }
+]

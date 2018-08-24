@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .container {
+  position: relative;
+  width: 1000px;
+  border: 1px solid black;
+  z-index: 1;
+  height: 530px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 768px;
+}
+
+body main .container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .container .header .header-items {
+  padding: 0 40px;
+  height: 115px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  background-color: #9E1006;
+}
+
+body main .container .header .header-items .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .container .header img {
+  width: 300px;
+}
+
+body main .container .header .exit {
+  width: 70px;
+  text-align: center;
+}
+
+body main .container .form {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .container .form .left {
+  width: calc(50% - 80px);
+}
+
+body main .container .form .left .Scan {
+  color: grey;
+  font-size: 1.2em;
+}
+
+body main .container .form .left #update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid grey;
+  max-width: 100%;
+  height: 290px;
+  overflow-y: scroll;
+}
+
+body main .container .form .left #update .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 3px;
+  padding: 3px;
+  height: 60px;
+  min-height: 60px;
+  position: relative;
+}
+
+body main .container .form .left #update .user .img-user {
+  margin-right: 5px;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body main .container .form .left #update .user p {
+  color: grey;
+}
+
+body main .container .form .left #update .user p:first-child {
+  color: blue;
+}
+
+body main .container .form .left #update .user input {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+body main .container .form .left #update .user input[type="checkbox"]:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  right: 1px;
+  height: 10px;
+  border: 1px solid #6E6E6E;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+body main .container .form .left #update .user input[type="checkbox"]:checked:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #9E1006;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+body main .container .form .left #update .user:hover {
+  background-color: #C3C3C3;
+  cursor: pointer;
+}
+
+body main .container .form .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(50% + 80px);
+}
+
+body main .container .form .right .select-copies {
+  position: relative;
+  width: 170px;
+  text-align: center;
+}
+
+body main .container .form .right .select-copies select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 40px;
+  background-color: #E7E7E9;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+body main .container .form .right .select-copies select:hover {
+  cursor: pointer;
+}
+
+body main .container .form .right .select-copies .select-item-copies:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 38px;
+  top: 19px;
+  right: 30px;
+  z-index: 4;
+  position: absolute;
+  pointer-events: none;
+  background-color: #ccc;
+}
+
+body main .container .form .right .select-copies .select-item-copies:after {
+  content: "";
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #333 transparent transparent transparent;
+  position: absolute;
+  pointer-events: none;
+  top: 70%;
+  right: 10px;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+body main .container .form .right .info {
+  margin-top: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid rgba(15, 15, 15, 0.1);
+  border-radius: 20px;
+  width: 420px;
+}
+
+body main .container .form .right .info p {
+  margin: 5px 0;
+}
+
+body main .container .form .right .info input[type="text"] {
+  width: 125px;
+  -webkit-box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+body main .container .form .right .info div {
+  width: 40%;
+  position: relative;
+}
+
+body main .container .form .right .info div select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 40px;
+  background-color: #E7E7E9;
+  border-radius: 5px;
+  padding: 0 20px;
+  overflow-y: scroll !important;
+}
+
+body main .container .form .right .info div select:hover {
+  cursor: pointer;
+}
+
+body main .container .form .right .info .select-item:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 38px;
+  top: 29px;
+  right: 30px;
+  z-index: 4;
+  position: absolute;
+  pointer-events: none;
+  background-color: #ccc;
+}
+
+body main .container .form .right .info .select-item:after {
+  content: "";
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #333 transparent transparent transparent;
+  position: absolute;
+  pointer-events: none;
+  top: 70%;
+  right: 10px;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+body main .container .form .right input[type="submit"] {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  border: none;
+  background-color: #9E1006;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  outline: none;
+}
+
+body main .container .form .right input[type="submit"]:hover {
+  background-color: #710C05;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

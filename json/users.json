@@ -1,0 +1,32 @@
+[
+  {
+      "Name": "Peter Parker",
+      "description": "archive folder",
+      "imageSrc": "../img/peter.jpg"
+  },
+  {
+      "Name": "Jensen Cavill",
+      "description": "archive folder",
+      "imageSrc": "../img/jensen.jpg"
+  },
+  {
+      "Name": "William Hammer",
+      "description": "archive folder",
+      "imageSrc": "../img/william.jpg"
+  },
+  {
+      "Name": "John Cavanna",
+      "description": "archive folder",
+      "imageSrc": "../img/john.jpg"
+  },
+  {
+      "Name": "Robert Clooney",
+      "description": "archive folder",
+      "imageSrc": "../img/robert.jpg"
+  },
+  {
+      "Name": "David Banderas",
+      "description": "archive folder",
+      "imageSrc": "../img/david.jpg"
+  }
+]

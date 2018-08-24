@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="header">
+        <div>
+          <img src="img/logo.jpg" alt="logo">
+        </div>
+        <div class="header-items">
+          <div class="header-text">
+            <p>Scan & Copy</p>
+            <p>version 1.0</p>
+          </div>
+          <div class="exit">
+            <p>Quitter</p>
+            <a href="#">
+              <img src="img/exit.png" alt="exit" class="exit" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <form class="form" id="content">
+        <div class="left">
+          <p class="Scan">Scan to</p>
+          <div class="list-users">
+          </div>
+        </div>
+        <div class="right">
+          <div class="select-copies">
+            <div class="select-item-copies">
+              <p>Copies</p>
+              <select name="CountCopies" id="demoBasic" size="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+          </div>
+          <div class="info">
+            <div class="select-item">
+              <p>Types of paper</p>
+              <select name="TypeOfPaper" id="types-paper" size="1">
+              </select>
+            </div>
+            <div class="select-item">
+              <p>Color modes</p>
+              <select name="ColorMode" id="mode-print">
+              </select>
+            </div>
+            <div class="select-item">
+              <p>Paper Sizes</p>
+              <select name="PaperSize" id="size-paper"></select>
+            </div>
+            <div>
+              <p>File name</p>
+              <input type="text" name="FileName" required>
+            </div>
+          </div>
+          <input type="submit">
+        </div>
+      </form>
+  </main>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
